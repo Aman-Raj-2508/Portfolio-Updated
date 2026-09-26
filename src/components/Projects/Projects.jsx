@@ -90,10 +90,10 @@ const PROJECTS = [
 ];
 
 const FILTERS = [
-  { id: 'all',       label: 'All Projects'  },
-  { id: 'fullstack', label: 'Full Stack'    },
-  { id: 'data',      label: 'Data & BI'     },
-  { id: 'frontend',  label: 'Frontend'      },
+  { id: 'all', label: 'All Projects' },
+  { id: 'fullstack', label: 'Full Stack' },
+  { id: 'data', label: 'Data & BI' },
+  { id: 'frontend', label: 'Frontend' },
 ];
 
 const Projects = () => {

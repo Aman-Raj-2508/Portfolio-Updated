@@ -7,12 +7,12 @@ import useScrollAnimation from '../../hooks/useScrollAnimation';
 import './About.css';
 
 const INFO_ITEMS = [
-  { icon: <FiUser />,      label: 'Name',       value: 'Aman Raj'                         },
-  { icon: <FiMapPin />,    label: 'Location',   value: 'India'                            },
-  { icon: <FiBriefcase />, label: 'Role',       value: 'Data Analyst · Full Stack Developer' },
-  { icon: <FiCalendar />,  label: 'Experience', value: '1+ Year'                          },
-  { icon: <FiMail />,      label: 'Email',      value: 'aman.raj.sde@gmail.com'            },
-  { icon: <FiCode />,      label: 'Stack',      value: 'Power BI · Fabric · React · Node.js' },
+  { icon: <FiUser />, label: 'Name', value: 'Aman Raj' },
+  { icon: <FiMapPin />, label: 'Location', value: 'India' },
+  { icon: <FiBriefcase />, label: 'Role', value: 'Data Analyst · Full Stack Developer' },
+  { icon: <FiCalendar />, label: 'Experience', value: '1+ Year' },
+  { icon: <FiMail />, label: 'Email', value: 'aman.raj.sde@gmail.com' },
+  { icon: <FiCode />, label: 'Stack', value: 'Power BI · Fabric · React · Node.js' },
 ];
 
 const About = () => {

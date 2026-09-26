@@ -4,23 +4,23 @@ import useScrollAnimation from '../../hooks/useScrollAnimation';
 import './Contact.css';
 
 const CONTACT_INFO = [
-  { icon: <FiMail />,   label: 'Email',    value: 'aman.raj.sde@gmail.com', href: 'mailto:aman.raj.sde@gmail.com' },
-  { icon: <FiPhone />,  label: 'Phone',    value: '+91 9430427995',         href: 'tel:+919430427995'             },
-  { icon: <FiMapPin />, label: 'Location', value: 'India',                  href: '#'                             },
+  { icon: <FiMail />, label: 'Email', value: 'aman.raj.sde@gmail.com', href: 'mailto:aman.raj.sde@gmail.com' },
+  { icon: <FiPhone />, label: 'Phone', value: '+91 9430427995', href: 'tel:+919430427995' },
+  { icon: <FiMapPin />, label: 'Location', value: 'India', href: '#' },
 ];
 
 const SOCIALS = [
-  { icon: <FiGithub />,   href: 'https://github.com/Aman-Raj-2508',                 label: 'GitHub'   },
+  { icon: <FiGithub />, href: 'https://github.com/Aman-Raj-2508', label: 'GitHub' },
   { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/aman-raj-1a4a35252/', label: 'LinkedIn' },
-  { icon: <FiTwitter />,  href: 'https://x.com/amansingh_2508',                     label: 'Twitter'  },
+  { icon: <FiTwitter />, href: 'https://x.com/amansingh_2508', label: 'Twitter' },
 ];
 
 const INITIAL = { name: '', email: '', subject: '', message: '' };
 
 const Contact = () => {
-  const [form,    setForm]    = useState(INITIAL);
-  const [status,  setStatus]  = useState('idle'); // idle | loading | success | error
-  const [errMsg,  setErrMsg]  = useState('');
+  const [form, setForm] = useState(INITIAL);
+  const [status, setStatus] = useState('idle'); // idle | loading | success | error
+  const [errMsg, setErrMsg] = useState('');
 
   useScrollAnimation();
 

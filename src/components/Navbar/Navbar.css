@@ -14,7 +14,7 @@
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   border-bottom: 1px solid rgba(99, 102, 241, 0.15);
-  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(99,102,241,0.1);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(99, 102, 241, 0.1);
 }
 
 /* ── Inner layout ── */
@@ -226,11 +226,17 @@
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
+
   .nav-links,
   .nav-cta {
     display: none;
   }
 
-  .hamburger    { display: flex; }
-  .mobile-menu  { display: block; }
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
 }

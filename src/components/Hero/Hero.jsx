@@ -16,10 +16,10 @@ const ROLES = [
 ];
 
 const Hero = () => {
-  const [roleIdx,    setRoleIdx]    = useState(0);
-  const [charIdx,    setCharIdx]    = useState(0);
+  const [roleIdx, setRoleIdx] = useState(0);
+  const [charIdx, setCharIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [displayed,  setDisplayed]  = useState('');
+  const [displayed, setDisplayed] = useState('');
 
   /* Typing effect */
   useEffect(() => {
@@ -111,11 +111,11 @@ const Hero = () => {
 
           <div className="socials">
             {[
-            { icon: <FiGithub />,   href: 'https://github.com/Aman-Raj-2508',                 label: 'GitHub'   },
-            { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/aman-raj-1a4a35252/', label: 'LinkedIn' },
-            { icon: <FiTwitter />,  href: 'https://x.com/amansingh_2508',                     label: 'Twitter'  },
-            { icon: <SiLeetcode/>,  href: 'https://leetcode.com/u/amansingh_2508/',          label: 'LeetCode' },
-            { icon: <FiMail />,     href: 'mailto:aman.raj.sde@gmail.com',                   label: 'Email'    },
+              { icon: <FiGithub />, href: 'https://github.com/Aman-Raj-2508', label: 'GitHub' },
+              { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/aman-raj-1a4a35252/', label: 'LinkedIn' },
+              { icon: <FiTwitter />, href: 'https://x.com/amansingh_2508', label: 'Twitter' },
+              { icon: <SiLeetcode />, href: 'https://leetcode.com/u/amansingh_2508/', label: 'LeetCode' },
+              { icon: <FiMail />, href: 'mailto:aman.raj.sde@gmail.com', label: 'Email' },
             ].map(({ icon, href, label }) => (
               <a key={label} href={href} className="social-btn" target="_blank" rel="noopener noreferrer" aria-label={label}>
                 {icon}
@@ -136,12 +136,12 @@ const Hero = () => {
 
               {/* Floating tech chips */}
               {[
-                { label: 'React',      icon: '⚛️', cls: 'chip-react'    },
-                { label: 'Node.js',    icon: '🟢', cls: 'chip-node'     },
-                { label: 'MongoDB',    icon: '🍃', cls: 'chip-mongo'    },
-                { label: 'Power BI',   icon: <SiPowerbi />, cls: 'chip-powerbi' },
-                { label: 'Fabric',     icon: 'F', cls: 'chip-fabric' },
-                { label: 'Express',    icon: '⚡', cls: 'chip-express'  },
+                { label: 'React', icon: '⚛️', cls: 'chip-react' },
+                { label: 'Node.js', icon: '🟢', cls: 'chip-node' },
+                { label: 'MongoDB', icon: '🍃', cls: 'chip-mongo' },
+                { label: 'Power BI', icon: <SiPowerbi />, cls: 'chip-powerbi' },
+                { label: 'Fabric', icon: 'F', cls: 'chip-fabric' },
+                { label: 'Express', icon: '⚡', cls: 'chip-express' },
               ].map(({ label, icon, cls }) => (
                 <div key={label} className={`tech-chip ${cls}`}>
                   <span className="tech-icon">{icon}</span>
@@ -153,9 +153,9 @@ const Hero = () => {
             {/* Quick stats row */}
             <div className="quick-stats">
               {[
-                { value: '1+',   label: 'Yr Exp'    },
-                { value: '5+',   label: 'Projects'  },
-                { value: '250+', label: 'Problems'  },
+                { value: '1+', label: 'Yr Exp' },
+                { value: '5+', label: 'Projects' },
+                { value: '250+', label: 'Problems' },
               ].map(({ value, label }, i) => (
                 <React.Fragment key={label}>
                   {i > 0 && <div className="qs-divider"></div>}

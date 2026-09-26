@@ -4,20 +4,20 @@ import { SiLeetcode } from 'react-icons/si';
 import './Footer.css';
 
 const FOOTER_LINKS = [
-  { label: 'Home',       href: '#home'       },
-  { label: 'About',      href: '#about'       },
-  { label: 'Skills',     href: '#skills'      },
-  { label: 'Experience', href: '#experience'  },
-  { label: 'Projects',   href: '#projects'    },
-  { label: 'Contact',    href: '#contact'     },
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 const SOCIALS = [
-  { icon: <FiGithub />,   href: 'https://github.com/Aman-Raj-2508',                 label: 'GitHub'   },
+  { icon: <FiGithub />, href: 'https://github.com/Aman-Raj-2508', label: 'GitHub' },
   { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/aman-raj-1a4a35252/', label: 'LinkedIn' },
-  { icon: <FiTwitter />,  href: 'https://x.com/amansingh_2508',                     label: 'Twitter'  },
-  { icon: <SiLeetcode/>,  href: 'https://leetcode.com/u/amansingh_2508/',          label: 'LeetCode' },
-  { icon: <FiMail />,     href: 'mailto:aman.raj.sde@gmail.com',                   label: 'Email'    },
+  { icon: <FiTwitter />, href: 'https://x.com/amansingh_2508', label: 'Twitter' },
+  { icon: <SiLeetcode />, href: 'https://leetcode.com/u/amansingh_2508/', label: 'LeetCode' },
+  { icon: <FiMail />, href: 'mailto:aman.raj.sde@gmail.com', label: 'Email' },
 ];
 
 const scrollTo = (href) => {
@@ -79,7 +79,7 @@ const Footer = () => {
             <div className="footer-tech-col">
               <h4 className="footer-col-title">Built With</h4>
               <div className="footer-stack">
-                {['React.js','Node.js','Express.js','MongoDB','Power BI','Microsoft Fabric','SQL','Python'].map((t) => (
+                {['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Power BI', 'Microsoft Fabric', 'SQL', 'Python'].map((t) => (
                   <span key={t} className="tag">{t}</span>
                 ))}
               </div>

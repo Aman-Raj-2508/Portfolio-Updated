@@ -51,9 +51,9 @@ const TIMELINE_EVENTS = [
 ];
 
 const TYPE_COLORS = {
-  work:      'var(--primary)',
+  work: 'var(--primary)',
   education: 'var(--accent)',
-  learning:  'var(--secondary)',
+  learning: 'var(--secondary)',
   milestone: 'var(--success)',
 };
 

@@ -6,17 +6,17 @@ import {
 import './Navbar.css';
 
 const NAV_LINKS = [
-  { label: 'Home',       href: '#home',       icon: FiHome },
-  { label: 'About',      href: '#about',      icon: FiUser },
-  { label: 'Skills',     href: '#skills',     icon: FiBarChart2 },
+  { label: 'Home', href: '#home', icon: FiHome },
+  { label: 'About', href: '#about', icon: FiUser },
+  { label: 'Skills', href: '#skills', icon: FiBarChart2 },
   { label: 'Experience', href: '#experience', icon: FiBriefcase },
-  { label: 'Projects',   href: '#projects',   icon: FiFolder },
-  { label: 'Contact',    href: '#contact',    icon: FiMail },
+  { label: 'Projects', href: '#projects', icon: FiFolder },
+  { label: 'Contact', href: '#contact', icon: FiMail },
 ];
 
 const Navbar = ({ theme, onToggleTheme }) => {
-  const [isScrolled,   setIsScrolled]   = useState(false);
-  const [isMenuOpen,   setIsMenuOpen]   = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = useCallback(() => {

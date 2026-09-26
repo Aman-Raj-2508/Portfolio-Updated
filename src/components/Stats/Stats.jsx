@@ -5,10 +5,10 @@ import { FiCode, FiStar, FiClock, FiUsers } from 'react-icons/fi';
 import './Stats.css';
 
 const STAT_DATA = [
-  { icon: <FiClock />,  end: 1,   suffix: '+', label: 'Year Experience',   color: '--primary'   },
-  { icon: <FiCode />,   end: 5,   suffix: '+', label: 'Projects Built',    color: '--secondary' },
-  { icon: <FiStar />,   end: 250, suffix: '+', label: 'Problems Solved',   color: '--accent'    },
-  { icon: <FiUsers />,  end: 100, suffix: '%', label: 'Commitment',       color: '--success'   },
+  { icon: <FiClock />, end: 1, suffix: '+', label: 'Year Experience', color: '--primary' },
+  { icon: <FiCode />, end: 5, suffix: '+', label: 'Projects Built', color: '--secondary' },
+  { icon: <FiStar />, end: 250, suffix: '+', label: 'Problems Solved', color: '--accent' },
+  { icon: <FiUsers />, end: 100, suffix: '%', label: 'Commitment', color: '--success' },
 ];
 
 const StatCard = ({ icon, end, suffix, label, color }) => {
